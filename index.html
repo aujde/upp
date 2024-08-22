@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>My Game</title>
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="upp.css" />
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<script src="game.js"></script>
+</head>
+
+<body>
+	<div id="main-wrap">
+		<div id="top">
+			<div>
+				<ul>
+					<li>Population: <span id="population">0</span></li>
+					<li>Material: <span id="material">0</span></li>
+					<li>Recruits: <span id="recurits">0</span></li>
+					<li>Earth Saved: <span id="earth-saved">0%</span></li>
+				</ul>
+			</div>
+			<div id="mid-top">Mid</div>
+			<div>Right</div>
+		</div>
+		<div id="tabs">
+			<ul>
+				<li data-tab="hq">Headquarters</li>
+				<li data-tab="squad">Squads</li>
+				<li data-tab="weapons">Weapons</li>
+				<li data-tab="mission">Mission</li>
+				<li data-tab="research">Research</li>
+				<li data-tab="intel">Intel</li>
+				<li data-tab="warp">Time Warp</li>
+				<li data-tab="options">Options</li>
+			</ul>
+		</div>
+		<div class="main" id="hq">
+			<div class="structures">
+				<ul>
+					<li class="structure" data-structure="shelter">
+						<div class="icon"></div>
+						<div class="info">
+							<div class="name">Shelter</div>
+							<div class="level">Level: 0</div>
+							<div class="cost">Cost: 100</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="info">
+			</div>
+		</div>
+		<div class="main" id="squad">
+			<div class="has-hover">
+				<div>Hello</div>
+				<div class="hover infobox">Hover</div>
+			</div>
+			<div class="has-hover">
+				<div>Hello2</div>
+				<div class="hover infobox">Hover2</div>
+			</div>
+		</div>
+		<div class="main" id="weapons">
+		</div>
+		<div class="main" id="mission">
+			<div class="battle-window">
+				<div id="player-list">
+					<ul>
+						<div class="player-battle-box">
+							<div class="name">Player</div>
+							<div class="title">The PC</div>
+						</div>
+					</ul>
+				</div>
+				<div id="enemy-list">
+					<ul></ul>
+				</div>
+			</div>
+			<div class="panel"></div>
+		</div>
+		<div class="main" id="research">
+		</div>
+		<div class="main" id="warp">
+		</div>
+		<div class="main" id="options">
+		</div>
+	</div>
+</body>
+
+</html>

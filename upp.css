@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+}
+
+.hover {
+    position: absolute;
+    display: none;
+}
+
+.hovered.infobox {
+    display: inline;
+}
+
+.infobox {
+    width:auto;
+    height:auto;
+    background-color: blue;
+}
+
+.battle-window {
+    width: 60%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #aaa;
+    box-shadow: inset 0 0 10px #000;
+    display: flex;
+}
+
+.battle-window > div {
+    flex: 1;
+}
+
+#top {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#top div {
+    width: 20%;
+    background-color: antiquewhite;
+}
+
+#tabs {
+    background-color:lemonchiffon;
+    height: 100px;
+}
+
+#tabs ul {
+    display: flex;
+    height: 100%;
+}
+
+#tabs ul li {
+    flex: 1;
+    border-right: 2px black solid;
+    text-align: center;
+    line-height: 100px;
+}
+
+#main-wrap {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#main {
+    background-color: coral;
+    flex: 1 1 auto;
+    display: flex;
+}
+#main div {
+    flex: 1;
+}
+#left-column {
+    background-color: dodgerblue;
+}
+#mid-main {
+    background-color: plum;
+}
+#right-detail {
+    background-color: royalblue;
+}
